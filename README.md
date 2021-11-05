@@ -1,4 +1,4 @@
-# Pour créer un envirement virtuel: 
+Pour créer un envirement virtuel: 
 Il faut commencer par créer un répertoire de travail qui va héberger le projet. 
 Pour cela il faut faire les commandes suivantes: 
     $ mkdir projects, pour la création du répertoire 
