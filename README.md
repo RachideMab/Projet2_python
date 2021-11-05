@@ -1,3 +1,6 @@
+Pour commencer à travailler sur ce projet, il faut prendre connaissance des exigences en terme d'installation et version de paquets 
+qu'il faut avoir en lisant le fichide requirements.txt
+
 Pour créer un envirement virtuel: 
 Il faut commencer par créer un répertoire de travail qui va héberger le projet. 
 Pour cela il faut faire les commandes suivantes: 
