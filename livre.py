@@ -1,4 +1,4 @@
-import requests
+import requests #pour obtenir les informations du site
 from bs4 import BeautifulSoup
 from pprint import pprint
 import shutil
@@ -7,7 +7,7 @@ url = 'https://books.toscrape.com/catalogue/vampire-knight-vol-1-vampire-knight-
 
 #Programme d'extraction des données d'un livre sur une page web.
 
-def books_analyse(url: str) -> dict[str, any]: 
+def books_analyse(url: str) -> dict[str, any]: #cette fonction reçoit en entrée une url et nous donne en sortie un dictionnaire. 
    
     response = requests.get(url)
     page = response.content
@@ -24,5 +24,5 @@ def books_analyse(url: str) -> dict[str, any]:
     image_url = "http://books.toscrape.com" + soup.img['src'][5:]
     book_info = {"Code": universal_product_code, "Title": title, "price_including_tax": price_including_tax, "price_excluding_tax": price_excluding_tax, "number_available": number_available, "product_description": product_description, "category": category, "review_rating": review_rating, "image_url": image_url}
     return book_info
-pprint(books_analyse(url))
+#pprint(books_analyse(url))
 

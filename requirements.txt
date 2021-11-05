@@ -1,0 +1,8 @@
+
+Pour commencer à travailler sur ce projet, 
+Il faut dabord créer et activer un environnement virtuel, puis installer les paquets suivants: 
+
+requests==2.26.0
+beautifulsoup4==4.9.3
+lxml==4.6.3
+bs4==0.0.1
