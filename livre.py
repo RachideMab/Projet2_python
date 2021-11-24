@@ -5,7 +5,7 @@ import shutil
 
 # url = 'https://books.toscrape.com/catalogue/william-shakespeares-star-wars-verily-a-new-hope-william-shakespeares-star-wars-4_871/index.html'
 
-#Programme d'extraction des données d'un livre sur une page web.
+# cette fonction est celle qui nous permet de prendre toutes les infoemetions d'un livre. 
 
 def books_analyse(url: str) -> dict[str, any]: #cette fonction reçoit en entrée une url et nous donne en sortie un dictionnaire. 
    
