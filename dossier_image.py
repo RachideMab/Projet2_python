@@ -2,10 +2,11 @@ import os
 import requests # to get image from the web
 import shutil # to save it locally
 
-url_cat= "https://books.toscrape.com/catalogue/category/books/nonfiction_13/index.html"
-cat_name = url_cat.split("/")[-2]
-category ='Historical1'
-image_url = "https://books.toscrape.com/media/cache/ec/65/ec651ed66822d4b68938afa645b1ece2.jpg"
+# url_cat= "https://books.toscrape.com/catalogue/category/books/nonfiction_13/index.html"
+# cat_name = url_cat.split("/")[-2]
+# category ='Historical1'
+# image_url = "https://books.toscrape.com/media/cache/ec/65/ec651ed66822d4b68938afa645b1ece2.jpg"
+
 def download_image(image_url, cat_name):
     ## Set up the image URL and filename
    
@@ -32,4 +33,4 @@ def download_image(image_url, cat_name):
     else:
         print('Image Couldn\'t be retreived')
 
-download_image(image_url, cat_name)
+# download_image(image_url, cat_name)

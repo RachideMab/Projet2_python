@@ -1,12 +1,12 @@
 import requests
 from bs4 import BeautifulSoup
-from pprint import pprint
+# from pprint import pprint
 from livre import books_analyse
 from dossier_image import download_image
 from save_book_infos import save_book_to_csv
 
-url = "https://books.toscrape.com/catalogue/category/books/sequential-art_5/index.html"
-
+# url = "https://books.toscrape.com/catalogue/category/books/sequential-art_5/index.html"
+# url = "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/page-1.html"
 
 #Début de la fonction pour changer de page 
 def get_next_page(url):
@@ -52,12 +52,11 @@ def book_in_categories(base): #cette fonction reçoit un lien d'une catégorie e
                 livres.append(book)
                 cat = base.split("/")[-2]
                 download_image(book["image_url"], cat)
-                save_book_to_csv(livres, cat)
-               
-                
+            save_book_to_csv(livres, cat)
+                          
     return livres
 
-book_in_categories(url)
+# book_in_categories(url)
 #Fin de la fonction qui récupère les liens de chaque livre dans une catégorie. 
 
 
