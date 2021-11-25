@@ -4,6 +4,7 @@
 from livre_par_categorie import book_in_categories
 from url_categories import liste_categories
 # -*- coding: utf-8 -*-
+
 url_site = "https://books.toscrape.com/"
 
 #Cette fonction est la fonction principale qui permet de scraper tout le site books.toscrape.com.

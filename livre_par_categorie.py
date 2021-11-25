@@ -5,9 +5,9 @@ from livre import books_analyse
 from dossier_image import download_image
 from save_book_infos import save_book_to_csv
 
-# url = "https://books.toscrape.com/catalogue/category/books/sequential-art_5/index.html"
 # url = "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/page-1.html"
-
+# ici une avons 2 fonction une partie qui nous permet de naviguer dans les différentes pages du site et 
+# la seconde qui récupère les liens de chaque livre par catégorie.   
 #Début de la fonction pour changer de page 
 def get_next_page(url):
     next_page = url

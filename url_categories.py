@@ -4,7 +4,8 @@ from pprint import pprint
 # from livre_par_categorie import book_in_categories
 # url_site = "https://books.toscrape.com/"
 
-# début de la fonction qui récupère tous les liens des catégories du site. 
+# début de la fonction qui récupère tous les liens des catégories du site.
+# cette fonction reçoit en comme paramètre une url du site et elle donne en sortie une liste des url des catégories.  
 
 def liste_categories(url_site):
     response = requests.get(url_site)

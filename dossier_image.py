@@ -29,7 +29,7 @@ def download_image(image_url, cat_name):
         with open(file,'wb') as f:
             shutil.copyfileobj(r.raw, f)
             
-       # print('Image sucessfully Downloaded: ',filename)
+       #print('Image sucessfully Downloaded: ',filename)
     else:
         print('Image Couldn\'t be retreived')
 
